@@ -1,11 +1,37 @@
-#fuck{
-	color:red;
+
+
+
+#title{
+	color:#89ae72;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 #frog-contain{
 
-	background-color:red;
-	height: 100px;
-	margin: 10px;
+	
+	height: 100%;
+	
 
+}
+
+img{
+	max-width:100%;
+	max-height:100%;
+	border-radius: 10px;
+	border: solid 10px black;
+}
+
+.name{
+	font-size: .7em;
+	text-align: center;
+	margin-top: 4px;
+	white-space: nowrap;
+	color:#89ae72;	
+}
+.sci-Name{
+	font-style: italic;
+	font-size: .7em;
+	white-space: nowrap;
+	color:#89ae72;
 }
