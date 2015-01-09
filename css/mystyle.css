@@ -35,3 +35,22 @@ img{
 	white-space: nowrap;
 	color:#89ae72;
 }
+
+#popup{
+	height: 60%;
+	width: 60%;
+	top: 20%;
+	left: 20%;
+	
+	position: fixed;
+
+}
+
+
+
+
+
+
+
+
+
