@@ -37,13 +37,18 @@ img{
 }
 
 #popup{
-	height: 60%;
-	width: 60%;
-	top: 20%;
-	left: 20%;
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 10%;
 	
 	position: fixed;
 
+
+}
+.moveUp{
+	z-index: 1;
+	
 }
 
 .popupFrog{
@@ -66,7 +71,12 @@ img{
 
 }
 
-
+#myFrame{
+	height: 100%;
+	width: 100%;
+	top: 20%;
+	left: 20%;
+}
 
 
 
