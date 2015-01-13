@@ -78,7 +78,23 @@ img{
 	left: 20%;
 }
 
+.modal-header{
+	background-image:url(cssimages/LeavesBg.jpg);
+}
 
+.modal-body{
+	background-image:url(cssimages/LeavesBg.jpg);
+}
+.modal-dialog{
 
+	color:#89ae72;
+	background-color: #89ae72;
+}
+
+#closeStyle{
+	color:white;
+	text-decoration: none;
+
+}
 
 

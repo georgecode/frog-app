@@ -23,32 +23,35 @@
   <body background="images/LeavesBg.jpg" bgproperties="fixed">
     <!--<div id="fuckbgWrapper">-->
     
-    <h1 id="title">Frog and Toad Caller!</h1>
+    <h1 id="title">11Frog and Toad Caller!</h1>
 
-    <div id="popup">
-      <!--<div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">X</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>-->
-    </div>
+    
+<!--modal start-->
 
-    <!--<div class="container">
-      <div id="popuphead"></div>
-      <div id="popup">
-        <div id="xxclose"></div>
-        <div id="picture"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" id="closeStyle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>finally a working popup!!</p>
+        <img id="Americantoad"src="images/Americantoad1.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         
-        <div id="info"></div>
-        <div id="play"></div>
-      </div>-->
+      </div>
+    </div>
+  </div>
+</div>
 
+<!--modal end-->
       <div class="row">
           <div id="frog-contain" class="col-xs-4">
-            <img id="Americantoad"src="images/Americantoad1.jpg">
+            <img id="Americantoad"src="images/Americantoad1.jpg"data-toggle="modal" data-target="#myModal">
             <h2 class="name">American toad<p class="sci-Name">(Bufo americanus)</p></h2>
           </div>
 
