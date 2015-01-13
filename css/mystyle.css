@@ -71,12 +71,15 @@ img{
 
 }
 
+
 #myFrame{
 	height: 100%;
 	width: 100%;
 	top: 20%;
 	left: 20%;
 }
+/*------Start style for pop-up--------*/
+
 
 .modal-header{
 	background-image:url(cssimages/LeavesBg.jpg);
@@ -84,9 +87,13 @@ img{
 
 .modal-body{
 	background-image:url(cssimages/LeavesBg.jpg);
+	text-align: center;
 }
-.modal-dialog{
+.modal-footer{
+	background-image:url(cssimages/LeavesBg.jpg);
+}
 
+.modal-dialog{
 	color:#89ae72;
 	background-color: #89ae72;
 }
@@ -94,7 +101,19 @@ img{
 #closeStyle{
 	color:white;
 	text-decoration: none;
+}
+
+#myModalLabel{
+text-align: center;
+font-weight: bold;
+font-size:2em;
+}
+
+.popSci-Name{
+	font-style: italic;
+	font-size: 1.5em;
 
 }
+/*-----End style for pop-up------*/
 
 
