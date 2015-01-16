@@ -8,8 +8,8 @@
 }
 
 #row-margin{
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 2px;
+	margin-left: 2px;
 }
 
 #frog-contain{
@@ -117,8 +117,32 @@ font-size:2em;
 .popSci-Name{
 	font-style: italic;
 	font-size: 1.5em;
+}
+
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+	margin-top: -65%;
+	z-index: 1;
+	margin-left: 40%;
+
+	
+	position: relative;
 
 }
+
+.info{
+	position: inherit;
+	margin-top: 40%;
+
+}
+/*#play-button{
+
+}
+
 /*-----End style for pop-up------*/
 
 
