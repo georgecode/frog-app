@@ -96,6 +96,7 @@ img{
 }
 .modal-footer{
 	background-image:url(cssimages/LeavesBg.jpg);
+	margin-top: 5%;
 }
 
 .modal-dialog{
@@ -123,13 +124,11 @@ font-size:2em;
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
-	border-left: 100px solid red;
+	border-left: 100px solid rgba(10,10,10,0.7);
 	border-bottom: 50px solid transparent;
 	margin-top: -65%;
 	z-index: 1;
 	margin-left: 40%;
-
-	
 	position: relative;
 
 }
