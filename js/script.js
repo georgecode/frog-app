@@ -40,7 +40,7 @@ var modalPop = function(name, sciName, id, pic, info){
 };
 
 var playSound = function(sound){
-	var audio = new Audio("'"+sound+"'");
+	var audio = new Audio(sound);
 	 	
 
 		$('#triangle-right').click(function() {
@@ -65,7 +65,7 @@ var playSound = function(sound){
 $('#frog-contain').click(function(){
 	
 	$('#kingModal').html(modalPop("froggy", "hydra jumppy", "Americanbullfrog", "images/Americanbullfrog1.jpg","its a froggedy frog"  ));
-	//playSound("http://www.state.nj.us/dep/fgw/ensp/audio/bullfrog.wav");
+	return(playSound('http://www.state.nj.us/dep/fgw/ensp/audio/bullfrog.wav'));
 
 
 
