@@ -11,19 +11,23 @@ $(document).ready(function(){
 
 	$('#title').append("<div id='"+armpit+"'>"+mouse+"</div>");
 
+//---name, sciName, imgId, pic, info, sound---
+
 //Testing creating an object below
 
-	function frog(name, sciName, pic, info) {
+	function frog(name, sciName, imgId, pic, info, sound) {
     this.name = name;
     this.sciName = sciName;
+    this.imgId= imgId
     this.pic = pic;
     this.info = info;
+    this.sound = sound;
     //this.audio = audio:
 }
 
 // testing calling a property from an object
 var frankFrog = new frog (
-	"george of the jungle", 
+	"frank the frog", 
 	"alpha-frank", 
 	"images/Greenfrog1.jpg", 
 	"info")
@@ -32,8 +36,26 @@ var frankFrog = new frog (
 $('#title').append("<div>"+frankFrog.name+"</div>");	
 
 
-//testing real class
-var zAmericanBullfrog = new frog ("American bullfrog", "(Rana catesbeiana)", "images/Carpenterfrog1.jpg","bla bla bla bla bla");
+/*-------template for adding frogs----------
+
+var z = new frog (
+	"name", 
+	"sciName", 
+	"imgId",
+	"pic", 
+	"info", 
+	"sound");
+
+------------template end-----------*/
+
+//frog objects
+var oCarpenterfrog = new frog (
+	"Carpenter frog", 
+	"Rana virgatipes", 
+	"Carpenterfrog",
+	"images/Carpenterfrog1.jpg", 
+	"info", 
+	"http://www.state.nj.us/dep/fgw/ensp/audio/carpenter_frog.wav");
 
 //test turning modal in to a jquary event
 //$('#frog-contain').click(function(){
@@ -75,6 +97,22 @@ var playSound = function(sound){
 
 //---name, sciName, imgId, pic, info---
 
+/*-------template for click event and adding info to modal---------
+
+
+
+$('html id').click(function(){
+	
+	$('#kingModal').html(modalPop("name", "sciName", "imgId", "pic","info"  ));
+	return(playSound('sound'));
+});
+
+
+
+//------------------------template end------------*/
+
+
+
 $('#Americanbullfrog').click(function(){
 	
 	$('#kingModal').html(modalPop("American bullfrog", "Rana catesbeiana", "Americanbullfrog", "images/Americanbullfrog1.jpg","its a froggedy frog"  ));
@@ -93,6 +131,11 @@ $('#Americantoad').click(function(){
 
 });
 
+$('#Carpenterfrog').click(function(){
+	
+	$('#kingModal').html(modalPop(oCarpenterfrog.name, oCarpenterfrog.sciName, oCarpenterfrog.imgId, oCarpenterfrog.pic, oCarpenterfrog.info  ));
+	return(playSound(oCarpenterfrog.sound));
+});
 
 
 
