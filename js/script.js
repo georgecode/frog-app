@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 //Testing creating an object below
 
-	function frog(name, sciName, imgId, pic, info, sound) {
+	function frog(name, sciName, imgId, pic, sound, info) {
     this.name = name;
     this.sciName = sciName;
     this.imgId= imgId
@@ -42,20 +42,61 @@ var z = new frog (
 	"name", 
 	"sciName", 
 	"imgId",
-	"pic", 
-	"info", 
-	"sound");
+	"pic",  
+	"sound",
+	"info");
 
 ------------template end-----------*/
 
 //frog objects
-var oCarpenterfrog = new frog (
+var Americanbullfrog = new frog (
+	"American bullfrog", 
+	"Rana catesbeiana", 
+	"Americanbullfrog",
+	"images/Americanbullfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/bullfrog.wav",
+	"info");
+
+var Americantoad = new frog (
+	"American toad", 
+	"Bufo americanus", 
+	"Americantoad",
+	"images/Americantoad1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/american_toad.wav",
+	"info");
+
+
+var Carpenterfrog = new frog (
 	"Carpenter frog", 
 	"Rana virgatipes", 
 	"Carpenterfrog",
-	"images/Carpenterfrog1.jpg", 
-	"info", 
-	"http://www.state.nj.us/dep/fgw/ensp/audio/carpenter_frog.wav");
+	"images/Carpenterfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/carpenter_frog.wav",
+	"info");
+
+var Easternspadefoot = new frog (
+	"Eastern spadefoot toad", 
+	"Scaphiopus h. holbrookii", 
+	"Easternspadefoot",
+	"images/EasternSpadefoot1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/spadefoot_toad.wav",
+	"info");
+
+var z = new frog (
+	"name", 
+	"sciName", 
+	"imgId",
+	"pic",  
+	"sound",
+	"info");
+
+var z = new frog (
+	"name", 
+	"sciName", 
+	"imgId",
+	"pic",  
+	"sound",
+	"info");
 
 //test turning modal in to a jquary event
 //$('#frog-contain').click(function(){
@@ -111,9 +152,9 @@ $('html id').click(function(){
 
 //------------------------template end------------*/
 
+/*var zzz = 'Americanbullfrog'
 
-
-$('#Americanbullfrog').click(function(){
+$('#'+zzz).click(function(){
 	
 	$('#kingModal').html(modalPop("American bullfrog", "Rana catesbeiana", "Americanbullfrog", "images/Americanbullfrog1.jpg","its a froggedy frog"  ));
 	return(playSound('http://www.state.nj.us/dep/fgw/ensp/audio/bullfrog.wav'));
@@ -129,15 +170,36 @@ $('#Americantoad').click(function(){
 
 
 
-});
+});     ----------*/
 
-$('#Carpenterfrog').click(function(){
+/*$('#Carpenterfrog').click(function(){
 	
 	$('#kingModal').html(modalPop(oCarpenterfrog.name, oCarpenterfrog.sciName, oCarpenterfrog.imgId, oCarpenterfrog.pic, oCarpenterfrog.info  ));
 	return(playSound(oCarpenterfrog.sound));
+});*/
+
+/*
+$('#Carpenterfrog').click(function(){
+	var x = Carpenterfrog
+	$('#kingModal').html(modalPop(x.name, x.sciName, x.imgId, x.pic, x.info  ));
+	return(playSound(x.sound));
+});
+*/
+
+var frogModal = function(frog){
+var xxxid = '#'+frog
+var x = eval(frog)
+$(xxxid).click(function(){
+	
+	$('#kingModal').html(modalPop(x.name, x.sciName, x.imgId, x.pic, x.info  ));
+	return(playSound(x.sound));
 });
 
-
+}
+frogModal('Americanbullfrog');
+frogModal('Americantoad');
+frogModal('Carpenterfrog');
+frogModal('Easternspadefoot');
 
 }); //This is THE END
 //frog 2
