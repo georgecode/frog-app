@@ -82,21 +82,109 @@ var Easternspadefoot = new frog (
 	"http://www.state.nj.us/dep/fgw/ensp/audio/spadefoot_toad.wav",
 	"info");
 
-var z = new frog (
-	"name", 
-	"sciName", 
-	"imgId",
-	"pic",  
-	"sound",
+var Fowlerstoad = new frog (
+	"Fowler’s toad", 
+	"Bufo woodhousii fowleri", 
+	"Fowlerstoad",
+	"images/Fowlerstoad1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/fowlers_toad.wav",
 	"info");
 
-var z = new frog (
+var Greenfrog = new frog (
+	"Green frog", 
+	"Rana clamitans melanota", 
+	"Greenfrog",
+	"images/Greenfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/green_frog.wav",
+	"info");
+
+var NewJerseychorusfrog = new frog (
+	"New Jersey chorus frog", 
+	"Pseudacris triseriata kalmi", 
+	"NewJerseychorusfrog",
+	"images/Newjerseychorusfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/nj_chorus_frog.wav",
+	"info");
+
+var Northerncricketfrog = new frog (
+	"Northern cricket frog", 
+	"Acris c. crepitans", 
+	"Northerncricketfrog",
+	"images/Northerncricketfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/no_cricket_frog.wav",
+	"info");
+
+var Northerngraytreefrog = new frog (
+	"Northern gray treefrog", 
+	"Hyla versicolor", 
+	"Northerngraytreefrog",
+	"images/Northerngreytreefrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/no_gray_frog.wav",
+	"info");
+
+var Northernspringpeeper = new frog (
+	"Northern spring peeper", 
+	"Pseudacris c. crucifer", 
+	"Northernspringpeeper",
+	"images/Northernspringpeeper1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/spring_peeper.wav",
+	"info");
+
+var Pickerelfrog = new frog (
+	"Pickerel frog", 
+	"Rana palustris", 
+	"Pickerelfrog",
+	"images/Pickerelfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/pickerel_frog.wav",
+	"info");
+
+var PineBarrenstreefrog = new frog (
+	"Pine Barrens treefrog", 
+	"Hyla andersonii", 
+	"PineBarrenstreefrog",
+	"images/PineBarrenstreefrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/pine_barrens_treefrog.wav",
+	"info");
+
+var Southerngraytreefrog = new frog (
+	"Southern gray treefrog", 
+	"Hyla chrysoscelis", 
+	"Southerngraytreefrog",
+	"images/Southerngreytreefrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/so_gray_treefrog.wav",
+	"info");
+
+var Southernleopardfrog = new frog (
+	"Southern leopard frog", 
+	"Rana utricularia", 
+	"Southernleopardfrog",
+	"images/Southernleopardfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/so_leopard_frog.wav",
+	"info");
+
+var Uplandchorusfrog = new frog (
+	"Upland chorus frog", 
+	"Pseudacris triseriata feriarum", 
+	"Uplandchorusfrog",
+	"images/Uplandchorusfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/upland_chorus_frog.wav",
+	"info");
+
+var Woodfrog = new frog (
+	"Wood frog", 
+	"Rana sylvatica", 
+	"Woodfrog",
+	"images/Woodfrog1.jpg",  
+	"http://www.state.nj.us/dep/fgw/ensp/audio/wood_frog.wav",
+	"info");
+
+/*var z = new frog (
 	"name", 
 	"sciName", 
 	"imgId",
 	"pic",  
 	"sound",
-	"info");
+	"info");*/
 
 //test turning modal in to a jquary event
 //$('#frog-contain').click(function(){
@@ -200,7 +288,18 @@ frogModal('Americanbullfrog');
 frogModal('Americantoad');
 frogModal('Carpenterfrog');
 frogModal('Easternspadefoot');
-
+frogModal('Fowlerstoad');
+frogModal('Greenfrog');
+frogModal('NewJerseychorusfrog');
+frogModal('Northerncricketfrog');
+frogModal('Northerngraytreefrog');
+frogModal('Northernspringpeeper');
+frogModal('Pickerelfrog');
+frogModal('PineBarrenstreefrog');
+frogModal('Southerngraytreefrog');
+frogModal('Southernleopardfrog');
+frogModal('Uplandchorusfrog');
+frogModal('Woodfrog');
 }); //This is THE END
 //frog 2
 /*---$('#Americantoad').click(function(){
