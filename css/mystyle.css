@@ -12,14 +12,6 @@
 	margin-left: 2px;
 }
 
-#frog-contain{
-
-	
-	/*height: 100%;*/
-	
-
-}
-
 img{
 	max-width:100%;
 	max-height:100%;
@@ -34,6 +26,7 @@ img{
 	white-space: nowrap;
 	color:#89ae72;	
 }
+
 .sci-Name{
 	font-style: italic;
 	font-size: .7em;
@@ -46,14 +39,11 @@ img{
 	width: 80%;
 	top: 10%;
 	left: 10%;
-	
 	position: fixed;
-
-
 }
+
 .moveUp{
 	z-index: 1;
-	
 }
 
 .popupFrog{
@@ -63,8 +53,6 @@ img{
 
 .popuptext{
 	color:#89ae72;
-
-
 }
 
 .xxclose{
@@ -73,7 +61,6 @@ img{
 	font-size: 3em;
 	text-align: right;
 	margin-bottom: -10px;
-
 }
 
 
@@ -83,7 +70,7 @@ img{
 	top: 20%;
 	left: 20%;
 }
-/*------Start style for pop-up--------*/
+/*------Start style for modal--------*/
 
 
 .modal-header{
@@ -144,7 +131,7 @@ font-size:2em;
 	z-index: 1;
 }
 
-#workFucker{
+#workPlease{
 	position: inherit;
 	padding-bottom: 10px;
 
@@ -158,24 +145,6 @@ p.info{
 	color:red;
 }
 
-/*div.modal-footer{
-
-
-}*/
-/*div.frogpic{
-	/*width: 100%;
-	height: 100%;
-	display:block;
-	border: solid 3px red; 
-	margin-bottom: 90%;
-	
-
-}
-
-
-/*#play-button{
-
-}
 
 /*-----End style for pop-up------*/
 
