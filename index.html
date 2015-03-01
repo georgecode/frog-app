@@ -9,8 +9,14 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
+    <!-- jquery -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    
+    <!--low-dash-->
+    <script type='text/javascript' src='js/low-dash.js'></script>
+
+
     <script type='text/javascript' src='js/script.js'></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,10 +26,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body background="images/LeavesBg.jpg" bgproperties="fixed">
-    <!--<div id="fuckbgWrapper">-->
+  <body background="images/LeavesBglittle.png" bgproperties="fixed">
+  
     
-    <h1 id="title">Frog and Toad Caller!</h1>
+    <h1 id="title"><img class="littlenj" src="images/littlenj.png"></img>NJ Frog and Toad Caller!</h1>
+    <div id="suckit"></div>
 
     
 <!--modal start-->
@@ -154,6 +161,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  <!--</div>-->
+
+
+
+    <!--     <%= lodash %>     -->
+    <script type='text/html' id="modalTemp_">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" id="closeStyle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+              <h4 class="modal-title" id="myModalLabel"> <%= zzname %> </h4>
+            </div>
+            <div class="modal-body">
+              <div id="workPlease">
+                <p class="popSci-Name">(<%= zzsciName %>)</p>
+                <div class="frogpic"><img id="<%= zzimgId %>"src="<%= zzpic %>"></div>
+                <a class="playButton">PLAY</a>
+                <p class="info"><%= zzinfo %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </script>
+
+
+
+
+
+
+
   </body>
 </html>

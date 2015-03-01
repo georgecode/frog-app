@@ -1,10 +1,24 @@
-
+body{
+	border: 1px solid transparent;
+}
+.littlenj{
+	margin-right: 10px;
+	margin-top: -10px;
+}
 
 
 #title{
 	color:#89ae72;
 	text-align: center;
 	margin-bottom: 20px;
+	font-family: serif;
+	font-size: 3.5em;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 0 0 2px black;
+	background-color:rgba(255,255,255,0.15);
+	/*box-shadow: 5px 5px 20px black;*/
+	
 }
 
 #row-margin{
@@ -197,6 +211,7 @@ font-size:2em;
 }
 p.info{
 	padding-top: 5px;
+
 
 }
 
