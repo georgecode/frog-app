@@ -253,6 +253,20 @@ var playSound = function(sound){
 	  		}
 		});
 
+		$('.frogpic').click(function() {
+	  		if (audio.paused == false) {
+	      		audio.pause();
+	      			
+	  		} else {
+	      		audio.play();
+	      		
+	  		}
+		});
+
+
+
+
+
 		$('#closeStyle').click(function(){
 			audio.pause();
 			audio.currentTime = 0;
