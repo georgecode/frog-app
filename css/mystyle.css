@@ -1,6 +1,14 @@
 body{
+	background-image: url(../images/LeavesBglittle.png);
+	color: red;
+	background-position: fixed;
+	/*background: url(images/mobileBgLeaves.png);*/
+	background-size: cover;
+	
 	border: 1px solid transparent;
 }
+
+
 .littlenj{
 	margin-right: 10px;
 	margin-top: -10px;
@@ -95,6 +103,16 @@ img{
 	top: 20%;
 	left: 20%;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+    	background: url(../images/mobileBgLeaves.png);
+    	background-size: cover;
+       
+    }
+}
+
+
 /*------Start style for modal--------*/
 
 
