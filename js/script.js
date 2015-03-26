@@ -161,7 +161,7 @@ var Woodfrog = new frog (
 	"http://www.state.nj.us/dep/fgw/ensp/audio/wood_frog.wav",
 	"The Wood frog is 2-2.8 inches long, and females are often larger than the males. They are more terrestrial than most frogs, and have a notable tendency to freeze when approached. They can be brown, tan, or rust colored, with a white or yellowish underside.   The most distinctive features of the Wood frog are their dark eye mask, and a white upper lip line. Typically they have few warts, and few dark spots on their dorsal surface (back surface).");
 
-
+//frog objects end
 
 
 //--------------click works
@@ -229,84 +229,104 @@ playSound(x.sound)
 var createModal = function(frog){
 	var x= frog
 	var frogId = '#'+ x.imgId
-$(frogId).click(function(){
-	
 
-	var modalTemp_=$('#modalTemp_').html()
-	var compileit=_.template(modalTemp_);
-	var output = compileit({zzname: x.name,zzsciName: x.sciName,zzimgId: x.imgId,zzpic:x.pic,zzinfo:x.info})
-
-
-	$('#kingModal').html(output)
-
-var playSound = function(sound){
-	var audio = new Audio(sound);
-	 	
-
-		$('.playButton').click(function() {
-	  		if (audio.paused == false) {
-	      		audio.pause();
-	      			
-	  		} else {
-	      		audio.play();
+	$(frogId).click(function(){
+			
+		var modalTemp_=$('#modalTemp_').html()
+		var compileit=_.template(modalTemp_);
+		var output = compileit({zzname: x.name,zzsciName: x.sciName,zzimgId: x.imgId,zzpic:x.pic,zzinfo:x.info})
 
 
+		$('#kingModal').html(output)
 
-	      		//--------
-	      		audio.addEventListener('ended', function() {
-    				this.currentTime = 0;
-    				this.play();
-				}, false);
-				audio.play();
-	      		//-----------
-	  		}
-		});
+		var playSound = function(sound){
+			
+			var audio = new Audio(sound);
 
-		$('.frogpic').click(function() {
-	  		if (audio.paused == false) {
-	      		audio.pause();
-	      			
-	  		} else {
-	      		audio.play();
-	      		
-	  		}
-		});
+			//this var plays pauses and loops the audio clips
+			var player = function(){
+					if (audio.paused == false) {
+			      		audio.pause();			      			
+			  		} else {
+			      		audio.play();
+
+			      		//this loops the audio
+			      		audio.addEventListener('ended', function() {
+		    				this.currentTime = 0;
+		    				this.play();
+						}, false);
+						audio.play();
+			      		//end audio loop
+			  		}
+
+			}
+			//END this var plays pauses and loops the audio clips 	
+
+				$('.playButton').click(function() {
+					player();
+			  		/*if (audio.paused == false) {
+			      		audio.pause();			      			
+			  		} else {
+			      		audio.play();
 
 
 
+			      		//--------
+			      		audio.addEventListener('ended', function() {
+		    				this.currentTime = 0;
+		    				this.play();
+						}, false);
+						audio.play();
+			      		//-----------
+			  		}*/
+				});
+
+				$('.frogpic').click(function() {
+					player();
+
+			  		/*if (audio.paused == false) {
+			      		audio.pause();
+			      			
+			  		} else {
+			      		audio.play();
+			      		
+			  		}*/
+				});
 
 
-		$('#closeStyle').click(function(){
-			audio.pause();
-			audio.currentTime = 0;
-		});
+				//this var ends the audio
+				var playerClose =function(){
+					audio.pause();
+					audio.currentTime = 0;
+
+				}
+				//END this var ends the audio
+				$('#closeStyle').click(function(){
+					playerClose();
+					/*audio.pause();
+					audio.currentTime = 0;*/
+				});
 
 
-//---below is a listener that will hide my model
-//---its good pratice to always put the listener on page load
-//---but in this case it needed access to the audio var
-		window.onpopstate = function(event) {
-		$('#myModal').modal('hide');
-			audio.pause();
-			audio.currentTime = 0;
-	};
-//---this creates a new state...it makes the browser 
-//--think this is a new page in its history stack
-	history.pushState();
-	};
+		//---below is a listener that will hide my model
+		//---its good pratice to always put the listener on page load
+		//---but in this case it needed access to the audio var
+				window.onpopstate = function(event) {
+					$('#myModal').modal('hide');
+						playerClose();
+						/*audio.pause();
+						audio.currentTime = 0;*/
+				};
+		//---this creates a new state...it makes the browser 
+		//--think this is a new page in its history stack
+			history.pushState();
+			};
 
 
 
-playSound(x.sound)
+		playSound(x.sound)
 
-
-
-	
-
-
-
-
-})	
+	})	
 }
 createModal(Americanbullfrog);
 createModal(Americantoad);

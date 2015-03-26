@@ -1,5 +1,6 @@
 body{
-	background-image: url(../images/LeavesBglittle.png);
+
+	background-image: url(../images/mobileBgLeaves.jpg);
 	color: red;
 	background-position: fixed;
 	/*background: url(images/mobileBgLeaves.png);*/
@@ -104,9 +105,9 @@ img{
 	left: 20%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
     body {
-    	background: url(../images/mobileBgLeaves.png);
+    	background: url(../images/LeavesBglittle.jpg);
     	background-size: cover;
        
     }
