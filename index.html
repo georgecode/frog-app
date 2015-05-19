@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content=" initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <title>Frog-app</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/32pxfavicon.png"/>
+
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
     <!-- Bootstrap -->
@@ -122,6 +125,11 @@
             <h2 class="name">Wood frog<p class="sci-Name">(Rana sylvatica)</p></h2>
           </div> 
 
+          <div id="frog-contain" class="col-xs-4">
+            <img id="Atlanticcoastleopardfrog"src="images/sm/sAtlanticcoastleopardfrog.jpg"data-toggle="modal" data-target="#myModal">
+            <h2 class="name">Atlantic coast leopard frog<p class="sci-Name">(Rana kauffeldi)</p></h2>
+          </div> 
+
       </div>
       <!--Landing page frog images and containers start-->
       <!--cut from here-->
@@ -148,6 +156,7 @@
               <div id="workPlease">
                 <p class="popSci-Name">(<%= zzsciName %>)</p>
                 <div class="frogpic"><img id="<%= zzimgId %>"src="<%= zzpic %>"></div>
+                <!--//add some javascript -->
                 <a class="playButton">PLAY</a>
                 <p class="info"><%= zzinfo %></p>
               </div>
