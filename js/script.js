@@ -157,8 +157,8 @@ var Atlanticcoastleopardfrog = new frog (
 	"Atlantic coast leopard frog", 
 	"Rana kauffeldi", 
 	"Atlanticcoastleopardfrog",
-	"images/sm/NOSOUNDsAtlanticcoastleopardfrog.jpg",  
-	"null",
+	"images/sm/sAtlanticcoastleopardfrog.jpg",  
+	"sounds/Atlantic_Coast_Leopard_Frog_Cut4.5db.mp3",
 	"The Atlantic coast leopard frog was first discovered by Carl Frederick Kauffeld in 1936, but there was not enough evidence to prove that it was a new species. It was rediscovered by Brian Curry in 2011 in the state of NY. With advancements in DNA testing, it was proven to be a new species. In 2014 it was proven to exist in NJ. This leopard frog resembles both the Northern and Southern leopard frogs. It is best identified by call. Physical differences exist as well.");
 //frog objects end
 
