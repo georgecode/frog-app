@@ -200,9 +200,11 @@ var createModal = function(frog){
 				//this var plays pauses and loops the audio clips
 				var player = function(){
 						if (audio.paused == false) {
-				      		audio.pause();			      			
+				      		audio.pause();
+				      		$(".playButton").text("PLAY");			      			
 				  		} else {
 				      		audio.play();
+				      		$(".playButton").text("PAUSE");
 
 				      		//this loops the audio
 				      		audio.addEventListener('ended', function() {
