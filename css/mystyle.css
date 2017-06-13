@@ -5,7 +5,7 @@ body{
 	background-position: fixed;
 	/*background: url(images/mobileBgLeaves.png);*/
 	background-size: cover;
-	
+
 	border: 1px solid transparent;
 }
 
@@ -33,7 +33,7 @@ body{
 	text-shadow: 0 0 2px black;
 	background-color:rgba(255,255,255,0.15);
 	/*box-shadow: 5px 5px 20px black;*/
-	
+
 }
 
 #row-margin{
@@ -44,7 +44,7 @@ body{
 img{
 	max-width:100%;
 	max-height:100%;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	border: solid 10px black;
 }
 
@@ -53,7 +53,7 @@ img{
 	text-align: center;
 	margin-top: 4px;
 	white-space: nowrap;
-	color:#89ae72;	
+	color:#89ae72;
 }
 
 
@@ -115,7 +115,7 @@ img{
     body {
     	background: url(../images/LeavesBglittle.jpg);
     	background-size: cover;
-       
+
     }
 }
 
@@ -131,13 +131,13 @@ img{
 .modal-body{
 	background:rgba(0,0,0,0.9);
 	text-align: center;
-	
+
 
 
 }
 .modal-footer{
 	background-image:url(cssimages/LeavesBg.jpg);
-	
+
 }
 
 .modal-dialog{
@@ -238,7 +238,7 @@ font-size:2em;
 #play-button{
 	position: fixed;
 	background-color: red;
-	
+
 	z-index: 1;
 }*/
 
