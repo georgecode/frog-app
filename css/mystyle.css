@@ -8,14 +8,9 @@ grey #828081 rgba(130, 128, 129, 1)*/
 }
 
 body{
-
 	background-image: url(../images/mobileBgLeaves.jpg);
-
-	/*color: red;*/
 	background-position: fixed;
-	/*background: url(images/mobileBgLeaves.png);*/
 	background-size: cover;
-
 	border: 1px solid transparent;
 }
 
@@ -39,18 +34,12 @@ body{
 	margin: auto;
 	margin-top: 15px;
 	margin-bottom: 20px;
-	padding-top: 10px;
-	/*width:98%;*/
-	border-radius: 3px;
-	/*font-family: serif;*/
+	padding-top: 30px;
+	padding-bottom: 20px;
 	font-size: 3.5em;
 	font-weight: 300;
 	font-style: italic;
-	/*text-shadow: 0 0 2px black;*/
-	/*background-color:rgba(255,255,255,0.15);*/
 	background-color:rgba(0,0,0,0.5);
-	/*box-shadow: 5px 5px 20px black;*/
-
 }
 
 #row-margin{
@@ -61,15 +50,12 @@ body{
 img{
 	max-width:100%;
 	max-height:100%;
-
-	/*border-radius: 10px;*/
-	/*border: solid 10px black;*/
 }
 
 .name{
 	border-top:1px solid rgba(233, 200, 147, 1);
 	background-color:rgba(30, 57, 42, 1);
-	font-size: .7em;
+	font-size: .6em;
 	text-align: center;
 	margin-top: 0px;
 	/*white-space: nowrap;*/
@@ -81,25 +67,14 @@ img{
 
 }
 
-
-
-/*@media screen and (max-width: 600px) {
-    .name {
-        font-size: 5px;
-    }
-}*/
-
 .sci-Name{
 	margin-top: 3px;
 	font-style: italic;
-	font-size: .7em;
+	font-size: .95em;
+	font-weight: 300;
 	/*white-space: nowrap;*/
 	/*color:#89ae72;*/
-
 }
-
-
-
 
 #popup{
 	height: 80%;
@@ -139,21 +114,34 @@ img{
 }
 
 
+@media screen and (min-width: 337px) {
+   .sci-Name {
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    .name{
+    	font-size: .9em;
+    	min-height:73px;
+    }
+}
+
 
 @media screen and (min-width: 500px) {
     body {
     	background: url(../images/LeavesBglittle.jpg);
     	background-size: cover;
-
     }
+
     .name{
     	font-size: 1em;
     	min-height:66px;
-
     }
+
     .sci-Name{
     	font-size: 1em;
     }
+
     #title{
 			margin-bottom: 30px;
 			padding-top: 35px;
@@ -162,13 +150,12 @@ img{
 }
 
 @media screen and (min-width: 1000px) {
-	    .name{
+	  .name{
     	font-size: 1.5em;
     	min-height:112px;
-
     }
     .sci-Name{
-    	font-size: 1.5em;
+    	font-size: 1.1em;
     }
     #title{
     	font-size: 8em;
@@ -176,10 +163,6 @@ img{
 			padding-top: 35px;
 			padding-bottom: 40px;
     }
-/*   .col-xs-4{
-		padding-right:10px;
-		padding-left: 10px
-		}*/
 }
 
 
@@ -194,13 +177,10 @@ img{
 .modal-body{
 	background:rgba(0,0,0,0.9);
 	text-align: center;
-
-
-
 }
+
 .modal-footer{
 	background-image:url(cssimages/LeavesBg.jpg);
-
 }
 
 .modal-dialog{
@@ -214,9 +194,9 @@ img{
 }
 
 #myModalLabel{
-text-align: center;
-font-weight: bold;
-font-size:2em;
+	text-align: center;
+	font-weight: bold;
+	font-size:2em;
 }
 
 
@@ -308,29 +288,15 @@ font-size:2em;
 #workPlease{
 	position: inherit;
 	padding-bottom: 10px;
-
 }
+
 p.info{
 	padding-top: 5px;
-
-
 }
 
 #testfoo{
 	color:red;
 }
-
-@media screen and (max-width: 337px) {
-   .sci-Name {
-        font-size: 0.95em;
-        font-weight: 300;
-    }
-    .name{
-    	font-size: .6em;
-    }
-}
-
-
 /*-----End style for pop-up------*/
 
 /*fix bootstrap padding*/
