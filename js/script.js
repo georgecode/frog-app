@@ -252,9 +252,7 @@ var createModal = function(frog){
 
 				//--think this is a new page in its history stack
 
-				history.pushState();
-
-				// history.pushState(null,null,'/');
+				history.pushState(null,null,'index.html');
 			};//END playSound function
 
 
