@@ -1,7 +1,14 @@
+/*lightGreen #3CC47C rgba(60, 196, 124, 1)
+darkGreen #1E392A rgba(30, 57, 42, 1)
+tan #E9C893 rgba(233, 200, 147, 1)
+grey #828081 rgba(130, 128, 129, 1)*/
+
+
 body{
 
 	background-image: url(../images/mobileBgLeaves.jpg);
-	color: red;
+
+	/*color: red;*/
 	background-position: fixed;
 	/*background: url(images/mobileBgLeaves.png);*/
 	background-size: cover;
@@ -9,6 +16,10 @@ body{
 	border: 1px solid transparent;
 }
 
+.layer{
+	background-color: rgba(60, 196, 124, 0.3);
+	margin-top: -16px;
+}
 
 .littlenj{
 	margin-right: 10px;
@@ -49,11 +60,17 @@ img{
 }
 
 .name{
+	border-top:1px solid rgba(233, 200, 147, 1);
+	background-color:rgba(30, 57, 42, 1);
 	font-size: .7em;
 	text-align: center;
-	margin-top: 4px;
-	white-space: nowrap;
-	color:#89ae72;
+	margin-top: 0px;
+	/*white-space: nowrap;*/
+	/*color:#89ae72;*/
+	color:white;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	min-height:40px;
 }
 
 
@@ -67,8 +84,9 @@ img{
 .sci-Name{
 	font-style: italic;
 	font-size: .7em;
-	white-space: nowrap;
-	color:#89ae72;
+	/*white-space: nowrap;*/
+	/*color:#89ae72;*/
+
 }
 
 
