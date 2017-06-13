@@ -2,7 +2,10 @@
 darkGreen #1E392A rgba(30, 57, 42, 1)
 tan #E9C893 rgba(233, 200, 147, 1)
 grey #828081 rgba(130, 128, 129, 1)*/
-
+@font-face {
+    font-family: humger;
+    src: url(Humger.ttf);
+}
 
 body{
 
@@ -17,7 +20,7 @@ body{
 }
 
 .layer{
-	background-color: rgba(60, 196, 124, 0.3);
+	background-color: rgba(60, 196, 124, 0.1);
 	margin-top: -16px;
 }
 
@@ -28,21 +31,24 @@ body{
 
 
 #title{
-	font-family: 'Caesar Dressing', serif;
-	color:#89ae72;
+	/*font-family: 'Caesar Dressing', serif;*/
+	font-family: 'humger', serif;
+	color:white;
+	/*color:#89ae72;*/
 	text-align: center;
 	margin: auto;
 	margin-top: 15px;
 	margin-bottom: 20px;
 	padding-top: 10px;
-	width:98%;
+	/*width:98%;*/
 	border-radius: 3px;
 	/*font-family: serif;*/
 	font-size: 3.5em;
 	font-weight: 300;
 	font-style: italic;
-	text-shadow: 0 0 2px black;
-	background-color:rgba(255,255,255,0.15);
+	/*text-shadow: 0 0 2px black;*/
+	/*background-color:rgba(255,255,255,0.15);*/
+	background-color:rgba(0,0,0,0.5);
 	/*box-shadow: 5px 5px 20px black;*/
 
 }
@@ -55,8 +61,9 @@ body{
 img{
 	max-width:100%;
 	max-height:100%;
+
 	/*border-radius: 10px;*/
-	border: solid 10px black;
+	/*border: solid 10px black;*/
 }
 
 .name{
@@ -70,7 +77,8 @@ img{
 	color:white;
 	padding-bottom: 3px;
 	padding-top: 3px;
-	min-height:40px;
+	min-height:37px;
+
 }
 
 
@@ -82,6 +90,7 @@ img{
 }*/
 
 .sci-Name{
+	margin-top: 3px;
 	font-style: italic;
 	font-size: .7em;
 	/*white-space: nowrap;*/
@@ -129,12 +138,48 @@ img{
 	left: 20%;
 }
 
+
+
 @media screen and (min-width: 500px) {
     body {
     	background: url(../images/LeavesBglittle.jpg);
     	background-size: cover;
 
     }
+    .name{
+    	font-size: 1em;
+    	min-height:66px;
+
+    }
+    .sci-Name{
+    	font-size: 1em;
+    }
+    #title{
+			margin-bottom: 30px;
+			padding-top: 35px;
+			padding-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+	    .name{
+    	font-size: 1.5em;
+    	min-height:112px;
+
+    }
+    .sci-Name{
+    	font-size: 1.5em;
+    }
+    #title{
+    	font-size: 8em;
+			margin-bottom: 40px;
+			padding-top: 35px;
+			padding-bottom: 40px;
+    }
+/*   .col-xs-4{
+		padding-right:10px;
+		padding-left: 10px
+		}*/
 }
 
 
@@ -277,15 +322,21 @@ p.info{
 
 @media screen and (max-width: 337px) {
    .sci-Name {
-        font-size: 6px;
+        font-size: 0.95em;
+        font-weight: 300;
     }
     .name{
-    	font-size: 7.5px;
+    	font-size: .6em;
     }
 }
 
 
-
 /*-----End style for pop-up------*/
 
+/*fix bootstrap padding*/
+.col-xs-4{
+	padding-right:4px;
+	padding-left: 4px
+}
+/*END fix bootstrap padding*/
 
