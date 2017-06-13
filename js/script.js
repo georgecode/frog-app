@@ -201,10 +201,10 @@ var createModal = function(frog){
 				var player = function(){
 						if (audio.paused == false) {
 				      		audio.pause();
-				      		$(".playButton").text("PLAY");
+				      		$(".playButton").html('<span class="glyphicon glyphicon-play" aria-hidden="true"></span>');
 				  		} else {
 				      		audio.play();
-				      		$(".playButton").text("PAUSE");
+				      		$(".playButton").html('<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>');
 
 				      		//this loops the audio
 				      		audio.addEventListener('ended', function() {
