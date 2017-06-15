@@ -8,7 +8,7 @@ Identifying frog and toad species is a complicated process for conservation biol
 *A. Allow conservationists to easily reference a frog and toad species unique call.
 *B. Allow them to keep contact with the species by returning calls.
 
-![page-gif](/vid3.gif)
+![page-gif](/demo.gif)
 
 ## Getting Started
 
