@@ -4,32 +4,25 @@
 
 ## Our Mission
 
-Identifying frog and toad species is a complicated process for conservation biologists. The scientists working in the field have few options and often lose contact with the amphibians before they are able to conclusively identify them. The goal of this project was to create an app that
-*A. Allow conservationists to easily reference a frog and toad species unique call.
-*B. Allow them to keep contact with the species by returning calls.
+Identifying frog and toad species is a complicated process for conservation biologists. The scientists working in the field have few options and often lose contact with the amphibians before they are able to conclusively identify them. The goal of this project was to create an app that:
+
+:frog: Allow conservationists to easily reference a frog and toad species unique call.
+:frog:  Allow them to keep contact with the species by returning calls.
 
 ![page-gif](/demo.gif)
 
 ## Getting Started
+Getting started is easy just navigate to [www.NJFrogSounds.com](http://www.njfrogsounds.com) , click on the species of frog or toad you want to call and press the :arrow_forward: button to start calling that species.
+
+## App Successes
 
 
-## MVP Functionality
+## Usability and Testing
 
 
-## Authors
+## Contributors
 
 
-## Team Dynamics
-
-* Schedule
+## Future features
 
 
-* Stand-Ups
-
-
-
-
-## Next Steps
-
-
-## Contributing
