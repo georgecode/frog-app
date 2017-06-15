@@ -1,14 +1,23 @@
-body{
+/*lightGreen #3CC47C rgba(60, 196, 124, 1)
+darkGreen #1E392A rgba(30, 57, 42, 1)
+tan #E9C893 rgba(233, 200, 147, 1)
+grey #828081 rgba(130, 128, 129, 1)*/
+@font-face {
+    font-family: humger;
+    src: url(Humger.ttf);
+}
 
+body{
 	background-image: url(../images/mobileBgLeaves.jpg);
-	color: red;
 	background-position: fixed;
-	/*background: url(images/mobileBgLeaves.png);*/
 	background-size: cover;
-	
 	border: 1px solid transparent;
 }
 
+.layer{
+	background-color: rgba(60, 196, 124, 0.1);
+	margin-top: -16px;
+}
 
 .littlenj{
 	margin-right: 10px;
@@ -17,23 +26,20 @@ body{
 
 
 #title{
-	font-family: 'Caesar Dressing', serif;
-	color:#89ae72;
+	/*font-family: 'Caesar Dressing', serif;*/
+	font-family: 'humger', serif;
+	color:white;
+	/*color:#89ae72;*/
 	text-align: center;
 	margin: auto;
 	margin-top: 15px;
 	margin-bottom: 20px;
-	padding-top: 10px;
-	width:98%;
-	border-radius: 3px;
-	/*font-family: serif;*/
+	padding-top: 30px;
+	padding-bottom: 20px;
 	font-size: 3.5em;
 	font-weight: 300;
 	font-style: italic;
-	text-shadow: 0 0 2px black;
-	background-color:rgba(255,255,255,0.15);
-	/*box-shadow: 5px 5px 20px black;*/
-	
+	background-color:rgba(0,0,0,0.5);
 }
 
 #row-margin{
@@ -44,35 +50,31 @@ body{
 img{
 	max-width:100%;
 	max-height:100%;
-	border-radius: 10px;
-	border: solid 10px black;
 }
 
 .name{
-	font-size: .7em;
+	border-top:1px solid rgba(233, 200, 147, 1);
+	background-color:rgba(30, 57, 42, 1);
+	font-size: .6em;
 	text-align: center;
-	margin-top: 4px;
-	white-space: nowrap;
-	color:#89ae72;	
+	margin-top: 0px;
+	/*white-space: nowrap;*/
+	/*color:#89ae72;*/
+	color:white;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	min-height:54px;
+
 }
-
-
-
-/*@media screen and (max-width: 600px) {
-    .name {
-        font-size: 5px;
-    }
-}*/
 
 .sci-Name{
+	margin-top: 3px;
 	font-style: italic;
-	font-size: .7em;
-	white-space: nowrap;
-	color:#89ae72;
+	font-size: .95em;
+	font-weight: 300;
+	/*white-space: nowrap;*/
+	/*color:#89ae72;*/
 }
-
-
-
 
 #popup{
 	height: 80%;
@@ -111,91 +113,136 @@ img{
 	left: 20%;
 }
 
+
+@media screen and (min-width: 337px) {
+   .sci-Name {
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    .name{
+    	font-size: .9em;
+    	min-height:76px; /*73 broke*/ /*80 works*/
+    }
+}
+
+
 @media screen and (min-width: 500px) {
     body {
     	background: url(../images/LeavesBglittle.jpg);
     	background-size: cover;
-       
+    }
+
+    .name{
+    	font-size: 1em;
+    	min-height:66px;
+    }
+
+    .sci-Name{
+    	font-size: 1em;
+    }
+
+    #title{
+			margin-bottom: 30px;
+			padding-top: 35px;
+			padding-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+	  .name{
+    	font-size: 1.5em;
+    	min-height:112px;
+    }
+    .sci-Name{
+    	font-size: 1.1em;
+    }
+    #title{
+    	font-size: 8em;
+			margin-bottom: 40px;
+			padding-top: 35px;
+			padding-bottom: 40px;
     }
 }
 
 
 /*------Start style for modal--------*/
-
+.modal-content{
+	background-color:rgba(30, 57, 42, 1);
+	/*border: 1px solid rgba(30, 57, 42, 1);*/
+	border: 1px solid rgba(233, 200, 147, 1);
+	border-radius: 0px;
+}
 
 .modal-header{
+	border-bottom: 1px solid rgba(233, 200, 147, 1);
 	/*background-image:url(cssimages/LeavesBg.jpg);*/
-	background:rgba(0,0,0,0.9);
+	/*background:rgba(0,0,0,0.9);*/
+	/*background-color:rgba(30, 57, 42, 1);*/
 }
 
 .modal-body{
-	background:rgba(0,0,0,0.9);
+	/*background:rgba(0,0,0,0.9);*/
+	/*background-color:rgba(30, 57, 42, 1);*/
 	text-align: center;
-	
-
-
 }
+
 .modal-footer{
 	background-image:url(cssimages/LeavesBg.jpg);
-	
 }
 
 .modal-dialog{
-	color:#89ae72;
+	/*color:#89ae72;*/
+	color:white;
 	background-color: #89ae72;
 }
 
 #closeStyle{
-	color:white;
+	/*color:white;*/
+	color:rgba(233, 200, 147, 1);
+	/*color: rgba(130, 128, 129, 1);*/
+	font-weight: 300;
+	text-shadow:none;
 	text-decoration: none;
+	opacity: 1;
+	border:1px solid rgba(233, 200, 147, 1);
+	padding:5px 10px 5px 10px;
+	border-radius: 50%;
+	margin-right: -12px;
+	margin-top: -12px;
 }
 
 #myModalLabel{
-text-align: center;
-font-weight: bold;
-font-size:2em;
+	text-align: center;
+	font-weight: bold;
+	font-size:2em;
 }
 
 
-
-.playButton {
-	margin-top: 8px;
-	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
-	box-shadow:inset 0px 1px 0px 0px #a4e271;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
-	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
-	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
-	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
-	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
-	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
-	background-color:#89c403;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #74b807;
+/*PAUSE BUTTON glyphicon glyphicon-pause*/
+.playButton span{
+	color:white;
+}
+.playButton{
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
 	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:26px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528009;
+	background-color: rgba(60, 196, 124, 1);
+	font-size:50px;
+	color:white;
+	margin-top: 8px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-left: 22px; /*15px for pause*/
+	padding-right: 11px;
+	border:white 5px solid;
+	border-radius: 50%;
+	/*padding:6px 24px;*/
+
 }
 .playButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
-	background:-moz-linear-gradient(top, #77a809 5%, #89c403 100%);
-	background:-webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
-	background:-o-linear-gradient(top, #77a809 5%, #89c403 100%);
-	background:-ms-linear-gradient(top, #77a809 5%, #89c403 100%);
-	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403',GradientType=0);
-	background-color:#77a809;
-	text-decoration: none;
+	background-color: rgba(60, 196, 124, 0.7);
 }
+
 .playButton:active {
 	position:relative;
 	top:1px;
@@ -207,67 +254,24 @@ font-size:2em;
 	font-size: 1.5em;
 }
 
-
-
-/*#triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	/*border-left: 100px solid rgba(10,10,10,0.7);
-	border-left: 100px solid red;
-	border-bottom: 50px solid transparent;
-	margin-top: -55%;
-	z-index: 1;
-	margin-left: 38%;
-	position: inherit;
-}*/
-
-
-/*#triangle-right{
-	width: 100px;
-	height: 100px;
-	background-color: red;
-	margin-top: -45%;
-	z-index: 100;
-	margin-left: 38%;
-	position: inherit;
-
-}
-
-
-#play-button{
-	position: fixed;
-	background-color: red;
-	
-	z-index: 1;
-}*/
-
 #workPlease{
 	position: inherit;
 	padding-bottom: 10px;
-
 }
+
 p.info{
 	padding-top: 5px;
-
-
 }
 
 #testfoo{
 	color:red;
 }
-
-@media screen and (max-width: 337px) {
-   .sci-Name {
-        font-size: 6px;
-    }
-    .name{
-    	font-size: 7.5px;
-    }
-}
-
-
-
 /*-----End style for pop-up------*/
 
+/*fix bootstrap padding*/
+.col-xs-4{
+	padding-right:4px;
+	padding-left: 4px
+}
+/*END fix bootstrap padding*/
 
