@@ -20,6 +20,7 @@ Getting started is easy just navigate to [www.NJFrogSounds.com](http://www.njfro
 
 
 ## App Successes
+Since its launch the App has experienced much success in its space. During peak seasons the app sees 100’s of visitors a week and has a returning visitor rate of nearly 50%. The app was also quickly adopted by many field herpetologists working for the New Jersey Conservation Foundation, and Stockton University.
 
 
 ## Usability and Testing
