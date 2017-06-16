@@ -21,7 +21,7 @@ Since its launch the App has experienced much success in its space. During peak 
 
 
 ## Usability and Testing
-
+A major part of this project was to ensuring the app was simple and intuitive to use. Through out the development of this project many ideas were tested in the field before they were pushed to the production version of this app. Testing beta versions allowed us to optimize unforeseen pains of using the app, allowing for a much better user experience on production versions.
 
 ## Contributors
 
