@@ -26,4 +26,7 @@ A major part of this project was to ensuring the app was simple and intuitive to
 ## Contributors
 - [George Czurlanis](https://github.com/georgecode) App author.
 - [Bill Scullion](https://www.instagram.com/wildman_bill/) Content researcher / curator .
+
+
 ## Future features
+In the future I’d like to add all 58 frog and toad species in the United States, as well as a "choose your state" search/dropdown.
